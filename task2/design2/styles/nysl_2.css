@@ -1,0 +1,79 @@
+body{
+    font-family: 'Prompt', sans-serif;
+}
+header{
+    font-size: 2em;
+    font-family: 'Prompt', sans-serif;
+    top: 0;
+}
+.principal{
+    background: url("../images/design2_image1.jpg");
+    background-size: 100% ;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+header h1{
+    font-size: 1.6em;
+    font-style: italic;
+    margin: 0px !important;
+    padding: 0;
+}
+nav{
+    display: flex;
+    font-size: 0.5em;
+    height: 30%;
+    justify-content: flex-end;
+}
+.ancor{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    background: #2037a8;
+    box-shadow: 0.6em 0.3em black;
+    margin-right: 3%;
+    margin-top: -23px;
+    margin-bottom: 70px;
+    width: 10%;
+}
+.ancor:hover{
+    background-color: #2cb841;
+}
+.actual{
+    background-color: #2cb841;
+}
+.caja{
+    background: #ffffff; 
+    border-style: solid;
+    border-color: black;
+    margin-top: 0.4%;
+}
+.caja h2{
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+}
+h4{
+    font-style: italic;
+    margin: 0;
+}
+#logo{
+    margin-top: 3%;
+    width: 10%;
+    height: 10%;
+}
+.page{
+    display: flex;
+}
+p{
+    padding-left: 4%;
+}
+.information{
+    display: flex;
+    margin: 3% 6%;
+    flex-direction: column;
+}
