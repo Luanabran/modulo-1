@@ -17,6 +17,11 @@ h1{
     color: white;
     -webkit-text-stroke: 1px var(--primary-color);
 }
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+/* NAVEGATION BAR */
 nav{
     display: flex;
     justify-content: flex-end;
@@ -51,6 +56,7 @@ nav{
     width: 10%;
     height: 10%;  
 }
+/* Container : "CARD" */
 .card{
     background-color:hsla(0, 0%, 77%, 0.7); 
     padding: 3% 0% 3% 0%;    
@@ -86,8 +92,9 @@ p{
     color: black;
     padding-left: 10%;
     padding-right: 10%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
 }
+/* RULES */
 .gridlist{
     text-align: left;
     padding: 3% 8% 3% 4%;
@@ -98,6 +105,7 @@ p{
     background-color: white;
     opacity: 0.8;
 }
+/* GAME INFO */
 #game {
     text-align: center;
 }
@@ -143,10 +151,15 @@ p{
     color: white;
     font-weight: bolder;
  }
- tr:hover{ 
+ .month tbody:hover{ 
    background-color: var(--main-color);
    opacity: 0.5;
-   color: beige;
+   color: white;
+}
+.locations tr:hover{
+    background-color: var(--main-color);
+    opacity: 0.5;
+    color: white;
 }
  .gameFooter a{
     color: var(--primary-color);
@@ -156,6 +169,7 @@ p{
 .gameFooter p{
     text-align: left;
 }
+/* GALLERY */
 .gallery{
     background-color:hsla(0, 0%, 77%, 0.6);
     padding: 3% 0% 3% 0%; 
@@ -203,6 +217,7 @@ p{
     grid-column: 2/3;
     grid-row: 2;
 }
+/* FOOTER */
 footer{
     display: flex;
     background-color: var(--primary-color);
@@ -222,4 +237,13 @@ footer a{
 }
 .fab:hover{
     color: white;
+}
+/* REGISTRATION */
+.registration{ 
+    display: inline
+}
+.regFooter p{
+    display: flex;
+    text-align: center;
+    letter-spacing: 0;
 }
