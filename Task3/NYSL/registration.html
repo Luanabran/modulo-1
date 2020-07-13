@@ -30,16 +30,17 @@
                 <h2>Registration Form</h2>
             </section>
 
-            <form action="show_data.html" method="get" autocomplete="on" class="gridlist">
-                <fieldset class="formHeader">
+            <form action="show_data.html" method="get" autocomplete="on" class="form">
+                <fieldset class="field formName">
                     <label class="label" for="first-name">Player's First Name:
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" placeholder="First Name" name="first-name" id="first-name">
                     </label>
 
                     <label class="label" for="last-name">Last Name:
                         <input type="text" name="last-name" id="last-name">
                     </label>
-
+                </fieldset>
+                <fieldset class="field adress">
                     <label class="label" for="street-address">Street Address:
                         <input type="text" name="street-address" id="street-address">
                     </label>
@@ -51,24 +52,25 @@
                     <label class="label" for="zip-code">Zip Code:
                         <input type="number" name="zip-code" id="zip-code">
                     </label>
-
+                </fieldset>
+                <fieldset class="field brithdate">
                     <label for="birth-date">Birth Date (mm/dd/yyyy)
                         <input type="date" name="birth-date" id="birth-date">
                     </label>
-
-                    <fieldset class="field gender">
+                </fieldset>
+                <fieldset class="gender">
                         <h5>Gender</h5>
 
                     <label for="female">Female
-                        <input type="radio" name="female" value="female" id="female">
+                        <input type="radio" name="gender" value="female" id="female">
                     </label>
 
                     <label for="male">Male
-                        <input type="radio" name="male" value="male" id="male">
+                        <input type="radio" name="gender" value="male" id="male">
                     </label>
 
                     <label for="other">Other
-                        <input type="radio" name="other" value="other" id="other">
+                        <input type="radio" name="gender" value="other" id="other">
                     </label> 
                 </fieldset>
                     
@@ -94,7 +96,7 @@
                         </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="field escolar">
                     <label for="first">First Closest School:
                         <select name="first" id="first">
                             <option value="aj-katzenmaier">AJ Katzenmaier</option>
@@ -115,7 +117,8 @@
                             <option value="south-elementary">South Elementary</option>
                         </select>                    </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="position">
+                    <div>
                     <h5>What position(s) do you normally play? (check all that apply)</h5>
                     <label for="forward">Forward
                         <input type="checkbox" name="forward" value="forward" id="forward">
@@ -129,7 +132,8 @@
                     <label for="goalkeeper">Goalkeeper
                         <input type="checkbox" name="goalkeeper" value="goalkeeper">
                     </label>
-                    <br>
+                    </div>
+                    <div>
                     <h5>What position(s) do you want to play? (check all that apply)</h5>
                     <label for="forward">Forward
                         <input type="checkbox" name="forward" value="forward" id="forward">
@@ -145,7 +149,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="field uniform">
                     <label for="have-uniform">Already Have a Uniform
                         <input type="radio" name="have-uniform" value="have-uniform" id="have-uniform">
                     </label>
@@ -173,7 +177,7 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="regFooter">
+                <fieldset class="field permission">
                     <section>
                         <h5>Permission to Play</h5>
                         <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
@@ -189,7 +193,7 @@
                         </p>
                     </section>
                 </fieldset>
-                <fieldset>
+                <fieldset class="field">
                     <label for="firm">Parent/Guardian Signature: 
                         <input type="text" name="firm" id="firm">
                     </label>
@@ -197,7 +201,9 @@
                         <input type="date" name="today" value="07/07/2020" id="today">
                     </label>
                 </fieldset>
-                <button type="submit">Send</button>
+                <div class="send">
+                <button type="submit" class="btn">SEND</button>
+                </div>
             </form>
         </div>
     </main>
