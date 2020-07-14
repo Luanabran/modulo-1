@@ -31,72 +31,79 @@
             </section>
 
             <form action="show_data.html" method="get" autocomplete="on" class="form">
-                <fieldset class="field formName">
-                    <label class="label" for="first-name">Player's First Name:
-                        <input type="text" placeholder="First Name" name="first-name" id="first-name">
-                    </label>
+                <fieldset class="field dataPlayer">
+                    <div class="name">
+                        <label class="label" for="first-name">Player's First Name:
+                            <input type="text" placeholder="First Name" name="first-name" id="first-name">
+                        </label>
 
-                    <label class="label" for="last-name">Last Name:
-                        <input type="text" name="last-name" id="last-name">
-                    </label>
-                </fieldset>
-                <fieldset class="field adress">
-                    <label class="label" for="street-address">Street Address:
-                        <input type="text" name="street-address" id="street-address">
-                    </label>
+                        <label class="label" for="last-name">Last Name:
+                            <input type="text" name="last-name" id="last-name">
+                        </label>
+                    </div>
 
-                    <label class="label" for="city">City:
-                        <input type="text" name="city" id="city">
-                    </label>
+                    <div class="adress">
+                        <label class="label" for="street-address">Street Address:
+                            <input type="text" name="street-address" id="street-address">
+                        </label>
 
-                    <label class="label" for="zip-code">Zip Code:
-                        <input type="number" name="zip-code" id="zip-code">
-                    </label>
-                </fieldset>
-                <fieldset class="field brithdate">
-                    <label for="birth-date">Birth Date (mm/dd/yyyy)
-                        <input type="date" name="birth-date" id="birth-date">
-                    </label>
+                        <label class="label" for="city">City:
+                            <input type="text" name="city" id="city">
+                        </label>
+
+                        <label class="label" for="zip-code">Zip Code:
+                            <input type="number" name="zip-code" id="zip-code">
+                        </label>
+                    </div>
+
+                    <div class="brith">
+                        <label for="birth-date">Birth Date (mm/dd/yyyy)
+                            <input type="date" name="birth-date" id="birth-date">
+                        </label>
+                    </div>
                 </fieldset>
                 <fieldset class="gender">
-                        <h5>Gender</h5>
+                            <h5>Gender</h5>
 
-                    <label for="female">Female
-                        <input type="radio" name="gender" value="female" id="female">
-                    </label>
+                        <label for="female">Female
+                            <input type="radio" name="gender" value="female" id="female">
+                        </label>
 
-                    <label for="male">Male
-                        <input type="radio" name="gender" value="male" id="male">
-                    </label>
+                        <label for="male">Male
+                            <input type="radio" name="gender" value="male" id="male">
+                        </label>
 
-                    <label for="other">Other
-                        <input type="radio" name="gender" value="other" id="other">
-                    </label> 
-                </fieldset>
+                        <label for="other">Other
+                            <input type="radio" name="gender" value="other" id="other">
+                        </label> 
+                    </fieldset>
                     
-                <fieldset class="field grade">
-                    <label for="grade">Grade</label>
-                        <Select name="grade" id="grade">
-                            <option value="pre-school">Pre-School</option>
-                            <option value="1st">1st</option>
-                            <option value="2st">2nd</option>
-                            <option value="3nd">3nd</option>
-                            <option value="4th">3th</option>
-                            <option value="5th">5th</option>
-                        </Select>
 
-                        <label for="parents">Parent/Guardian: 
-                            <input type="text" name="parents" id="parents">
-                        </label>
-                        <label for="phone">Contact Phone:
-                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                        </label>
-                        <label for="phone">Contact Email:
-                            <input type="email" name="email" id="email">
-                        </label>
-                </fieldset>
+            <fieldset class="field dataParents">
+                    <label for="parents">Parent/Guardian: 
+                        <input type="text" name="parents" id="parents">
+                    </label>
+                    <label for="phone">Contact Phone:
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </label>
+                    <label for="phone">Contact Email:
+                        <input type="email" name="email" id="email">
+                    </label>
+            </fieldset>
 
                 <fieldset class="field escolar">
+                    <div class="grade">
+                        <label for="grade">Grade</label>
+                            <Select name="grade" id="grade">
+                                <option value="pre-school">Pre-School</option>
+                                <option value="1st">1st</option>
+                                <option value="2st">2nd</option>
+                                <option value="3nd">3nd</option>
+                                <option value="4th">3th</option>
+                                <option value="5th">5th</option>
+                            </Select>
+                    </div>
+
                     <label for="first">First Closest School:
                         <select name="first" id="first">
                             <option value="aj-katzenmaier">AJ Katzenmaier</option>

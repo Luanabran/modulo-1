@@ -120,7 +120,7 @@ p{
 }
 .tabla {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-content: center;
@@ -136,10 +136,17 @@ p{
     caption-side: top;
 }
 .locations{
-    grid-column: 1/4;
-    grid-row: 2;
-    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 } 
+#game .locations h4{
+    text-align: center;
+}
+iframe{
+    width: 25vw;
+    height: 20vh;
+}
  caption, td, th {
     padding: 1%;
  }
@@ -157,7 +164,7 @@ p{
    opacity: 0.5;
    color: white;
 }
-.locations tr:hover{
+.locations :hover{
     background-color: var(--main-color);
     opacity: 0.5;
     color: white;
